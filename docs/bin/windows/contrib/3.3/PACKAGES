@@ -1,0 +1,8 @@
+Package: skleid
+Version: 1.6.9
+Depends: R (>= 3.3.0)
+Imports: Biostrings, muscle, magrittr, markdown, RCurl, shiny,
+        shinyFiles, utils
+Suggests: knitr
+License: file LICENSE
+
