@@ -1,0 +1,216 @@
+Package: BiocGenerics
+Version: 0.20.0
+Depends: methods, utils, graphics, stats, parallel
+Imports: methods, utils, graphics, stats, parallel
+Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, AnnotationDbi,
+        oligoClasses, oligo, affyPLM, flowClust, affy, DESeq2, MSnbase,
+        annotate, RUnit
+License: Artistic-2.0
+MD5sum: acb8cb2256a0aca5ac0d66c4ce30a9da
+NeedsCompilation: no
+
+Package: Biostrings
+Version: 2.42.0
+Depends: R (>= 2.8.0), methods, BiocGenerics (>= 0.15.6), S4Vectors (>=
+        0.11.1), IRanges (>= 2.5.27), XVector (>= 0.11.6)
+Imports: graphics, methods, stats, utils, BiocGenerics, IRanges,
+        XVector
+LinkingTo: S4Vectors, IRanges, XVector
+Suggests: BSgenome (>= 1.13.14), BSgenome.Celegans.UCSC.ce2 (>=
+        1.3.11), BSgenome.Dmelanogaster.UCSC.dm3 (>= 1.3.11),
+        BSgenome.Hsapiens.UCSC.hg18, drosophila2probe, hgu95av2probe,
+        hgu133aprobe, GenomicFeatures (>= 1.3.14), hgu95av2cdf, affy
+        (>= 1.41.3), affydata (>= 1.11.5), RUnit
+Enhances: Rmpi
+License: Artistic-2.0
+MD5sum: 054e88aefd344f8a03e94dfb4daa96da
+NeedsCompilation: yes
+
+Package: bitops
+Version: 1.0-6
+License: GPL (>= 2)
+MD5sum: fba16485a51b1ccd354abde5816b6bdd
+NeedsCompilation: yes
+
+Package: digest
+Version: 0.6.10
+Depends: R (>= 2.4.1)
+Suggests: knitr, rmarkdown
+License: GPL-2
+MD5sum: 47d19499e89d3bd3e2c2c20ff3f33001
+NeedsCompilation: yes
+
+Package: htmltools
+Version: 0.3.5
+Depends: R (>= 2.14.1)
+Imports: utils, digest, Rcpp
+LinkingTo: Rcpp
+Suggests: markdown, testthat
+Enhances: knitr
+License: GPL (>= 2)
+MD5sum: 5f001aff4a39e329f7342dcec5139724
+NeedsCompilation: yes
+
+Package: httpuv
+Version: 1.3.3
+Depends: R (>= 2.15.1), methods
+Imports: Rcpp (>= 0.11.0), utils
+LinkingTo: Rcpp
+License: GPL-3 | file LICENSE
+MD5sum: c78ae068cf59e949b9791be987bb4489
+NeedsCompilation: yes
+
+Package: IRanges
+Version: 2.8.1
+Depends: R (>= 3.1.0), methods, utils, stats, BiocGenerics (>= 0.19.1),
+        S4Vectors (>= 0.11.19)
+Imports: stats4
+LinkingTo: S4Vectors
+Suggests: XVector, GenomicRanges, GenomicFeatures, GenomicAlignments,
+        BSgenome.Celegans.UCSC.ce2, RUnit
+License: Artistic-2.0
+MD5sum: 86c30190711da87f96b91b121766bf32
+NeedsCompilation: yes
+
+Package: jsonlite
+Version: 1.1
+Depends: methods
+Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp
+License: MIT + file LICENSE
+MD5sum: 089caeead83414a4467bae0795638005
+NeedsCompilation: yes
+
+Package: magrittr
+Version: 1.5
+Suggests: testthat, knitr
+License: MIT + file LICENSE
+MD5sum: e74ab7329f2b9833f0c3c1216f86d65a
+NeedsCompilation: no
+
+Package: markdown
+Version: 0.7.7
+Depends: R (>= 2.11.1)
+Imports: mime (>= 0.3)
+Suggests: knitr, RCurl
+License: GPL-2
+MD5sum: 72deca9c675c7cc9343048edbc29f7ff
+NeedsCompilation: yes
+
+Package: mime
+Version: 0.5
+Imports: tools
+License: GPL
+MD5sum: 87e00b6d57b581465c19ae869a723c4d
+NeedsCompilation: yes
+
+Package: muscle
+Version: 3.16.0
+Depends: Biostrings
+License: Unlimited
+MD5sum: bfb04caf19a5ef16a3a827b6a6e5e787
+NeedsCompilation: yes
+
+Package: R6
+Version: 2.2.0
+Depends: R (>= 3.0)
+Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
+License: MIT + file LICENSE
+MD5sum: 659d83b2d3f7a308a48332b4cfbdab49
+NeedsCompilation: no
+
+Package: Rcpp
+Version: 0.12.8
+Depends: R (>= 3.0.0)
+Imports: methods, utils
+Suggests: RUnit, inline, rbenchmark, highlight, pkgKitten (>= 0.1.2)
+License: GPL (>= 2)
+MD5sum: 1e878b7bdc3fd23a2cd4a33572613aae
+NeedsCompilation: yes
+
+Package: RCurl
+Version: 1.95-4.8
+Depends: R (>= 3.0.0), methods, bitops
+Suggests: Rcompression, XML
+License: BSD
+MD5sum: 9c8aaff986eb2792c89dd3ae54d21580
+NeedsCompilation: yes
+
+Package: RJSONIO
+Version: 1.3-0
+Imports: methods
+License: BSD_3_clause + file LICENSE
+MD5sum: 72c395622ba8d1435ec43849fd32c830
+NeedsCompilation: yes
+
+Package: S4Vectors
+Version: 0.12.0
+Depends: R (>= 3.3.0), methods, utils, stats, stats4, BiocGenerics (>=
+        0.15.10)
+Suggests: IRanges, GenomicRanges, Matrix, ShortRead, graph, data.table,
+        RUnit
+License: Artistic-2.0
+MD5sum: 6e21230bdc7e27246f04e07b2ae9c5f2
+NeedsCompilation: yes
+
+Package: shiny
+Version: 0.14.2
+Depends: R (>= 3.0.0), methods
+Imports: utils, httpuv (>= 1.3.3), mime (>= 0.3), jsonlite (>= 0.9.16),
+        xtable, digest, htmltools (>= 0.3.5), R6 (>= 2.0), sourcetools
+Suggests: datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),
+        markdown, rmarkdown, ggplot2
+License: GPL-3 | file LICENSE
+MD5sum: a7d57c8bcdaca781567e085c80401767
+NeedsCompilation: no
+
+Package: shinyFiles
+Version: 0.6.2
+Imports: tools, shiny (>= 0.11), htmltools, RJSONIO
+License: GPL (>= 2)
+MD5sum: e9fc1b411742cbe3d2cfa3c33d9baa15
+NeedsCompilation: no
+
+Package: skleid
+Version: 1.6.9
+Depends: R (>= 3.3.0)
+Imports: Biostrings, muscle, magrittr, markdown, RCurl, shiny,
+        shinyFiles, utils
+Suggests: knitr
+License: file LICENSE
+MD5sum: c5af3d3f09624e70f4bd93ad9e074b3f
+NeedsCompilation: no
+
+Package: sourcetools
+Version: 0.1.5
+Depends: R (>= 3.0.2)
+Suggests: testthat
+License: MIT + file LICENSE
+MD5sum: b4d7902ffafd9802e8fbff5ce824bb28
+NeedsCompilation: yes
+
+Package: xtable
+Version: 1.8-2
+Depends: R (>= 2.10.0)
+Imports: stats, utils
+Suggests: knitr, lsmeans, spdep, splm, sphet, plm, zoo, survival
+License: GPL (>= 2)
+MD5sum: 239e4825cd046156a67efae3aac01d86
+NeedsCompilation: no
+
+Package: XVector
+Version: 0.14.0
+Depends: R (>= 2.8.0), methods, BiocGenerics (>= 0.19.2), S4Vectors (>=
+        0.9.29), IRanges (>= 2.5.27)
+Imports: methods, zlibbioc, BiocGenerics, S4Vectors, IRanges
+LinkingTo: S4Vectors, IRanges
+Suggests: Biostrings, drosophila2probe, RUnit
+License: Artistic-2.0
+MD5sum: a9d4103b5fc68628ff6dd3f78902fdbf
+NeedsCompilation: yes
+
+Package: zlibbioc
+Version: 1.20.0
+License: Artistic-2.0 + file LICENSE
+MD5sum: f68b45fca70f39c7958fb43c0504c546
+NeedsCompilation: yes
+
