@@ -40,6 +40,23 @@ License: GPL-2
 MD5sum: 47d19499e89d3bd3e2c2c20ff3f33001
 NeedsCompilation: yes
 
+Package: evaluate
+Version: 0.10
+Depends: R (>= 3.0.2)
+Imports: methods, stringr (>= 0.6.2)
+Suggests: testthat, lattice, ggplot2
+License: MIT + file LICENSE
+MD5sum: c49326babf984a8b36e7e276da370ad2
+NeedsCompilation: no
+
+Package: highr
+Version: 0.6
+Depends: R (>= 3.0.2)
+Suggests: knitr, testit
+License: GPL
+MD5sum: bf47388c5f57dc61962362fb7e1d8b16
+NeedsCompilation: no
+
 Package: htmltools
 Version: 0.3.5
 Depends: R (>= 2.14.1)
@@ -79,6 +96,18 @@ Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp
 License: MIT + file LICENSE
 MD5sum: 089caeead83414a4467bae0795638005
 NeedsCompilation: yes
+
+Package: knitr
+Version: 1.15.1
+Depends: R (>= 3.1.0)
+Imports: evaluate (>= 0.10), digest, highr, markdown, stringr (>= 0.6),
+        yaml, methods, tools
+Suggests: formatR, testit, rgl (>= 0.95.1201), codetools, rmarkdown,
+        htmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10), png, jpeg,
+        XML, RCurl, DBI (>= 0.4-1), tibble
+License: GPL
+MD5sum: dbdfc4a109e495b0652c9b13b97f0fcf
+NeedsCompilation: no
 
 Package: magrittr
 Version: 1.5
@@ -188,6 +217,24 @@ License: MIT + file LICENSE
 MD5sum: b4d7902ffafd9802e8fbff5ce824bb28
 NeedsCompilation: yes
 
+Package: stringi
+Version: 1.1.2
+Depends: R (>= 2.13.1)
+Imports: tools, utils, stats
+License: file LICENSE
+License_is_FOSS: yes
+MD5sum: 0ec2faa62643e1900734c0eaf5096648
+NeedsCompilation: yes
+
+Package: stringr
+Version: 1.1.0
+Depends: R (>= 2.14)
+Imports: stringi (>= 0.4.1), magrittr
+Suggests: testthat, knitr, htmltools, htmlwidgets, rmarkdown, covr
+License: GPL-2
+MD5sum: 47973a33944c6d5db9524b1e835b8a5d
+NeedsCompilation: no
+
 Package: xtable
 Version: 1.8-2
 Depends: R (>= 2.10.0)
@@ -206,6 +253,13 @@ LinkingTo: S4Vectors, IRanges
 Suggests: Biostrings, drosophila2probe, RUnit
 License: Artistic-2.0
 MD5sum: a9d4103b5fc68628ff6dd3f78902fdbf
+NeedsCompilation: yes
+
+Package: yaml
+Version: 2.1.14
+Suggests: testthat
+License: BSD_3_clause + file LICENSE
+MD5sum: 2de63248e6a122c368f8e4537426e35c
 NeedsCompilation: yes
 
 Package: zlibbioc

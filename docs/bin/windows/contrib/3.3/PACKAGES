@@ -35,6 +35,19 @@ Suggests: knitr, rmarkdown
 License: GPL-2
 Archs: i386, x64
 
+Package: evaluate
+Version: 0.10
+Depends: R (>= 3.0.2)
+Imports: methods, stringr (>= 0.6.2)
+Suggests: testthat, lattice, ggplot2
+License: MIT + file LICENSE
+
+Package: highr
+Version: 0.6
+Depends: R (>= 3.0.2)
+Suggests: knitr, testit
+License: GPL
+
 Package: htmltools
 Version: 0.3.5
 Depends: R (>= 2.14.1)
@@ -70,6 +83,16 @@ Depends: methods
 Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp
 License: MIT + file LICENSE
 Archs: i386, x64
+
+Package: knitr
+Version: 1.15.1
+Depends: R (>= 3.1.0)
+Imports: evaluate (>= 0.10), digest, highr, markdown, stringr (>= 0.6),
+        yaml, methods, tools
+Suggests: formatR, testit, rgl (>= 0.95.1201), codetools, rmarkdown,
+        htmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10), png, jpeg,
+        XML, RCurl, DBI (>= 0.4-1), tibble
+License: GPL
 
 Package: magrittr
 Version: 1.5
@@ -161,6 +184,21 @@ Suggests: testthat
 License: MIT + file LICENSE
 Archs: i386, x64
 
+Package: stringi
+Version: 1.1.2
+Depends: R (>= 2.13.1)
+Imports: tools, utils, stats
+License: file LICENSE
+License_is_FOSS: yes
+Archs: i386, x64
+
+Package: stringr
+Version: 1.1.0
+Depends: R (>= 2.14)
+Imports: stringi (>= 0.4.1), magrittr
+Suggests: testthat, knitr, htmltools, htmlwidgets, rmarkdown, covr
+License: GPL-2
+
 Package: xtable
 Version: 1.8-2
 Depends: R (>= 2.10.0)
@@ -176,6 +214,12 @@ Imports: methods, zlibbioc, BiocGenerics, S4Vectors, IRanges
 LinkingTo: S4Vectors, IRanges
 Suggests: Biostrings, drosophila2probe, RUnit
 License: Artistic-2.0
+Archs: i386, x64
+
+Package: yaml
+Version: 2.1.14
+Suggests: testthat
+License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: zlibbioc
