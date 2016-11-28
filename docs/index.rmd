@@ -13,15 +13,10 @@ output:
 bindir <- max(list.files('bin/windows/contrib', full.names=T))
 srcdir <- 'src/contrib'
 
-get_file <- function(dir, pkg, md=TRUE) {
-    f <- list.files(dir, full.names=TRUE)
-    pkgfile <- f[grep(pkg, f)]
-    if (!md) {
-        return(basename(pkgfile))
-    }
-    paste0("[", basename(pkgfile), "](https://id-bioinfo.github.io/minicran/", pkgfile, ")")
+source("https://raw.githubusercontent.com/GuangchuangYu/drat/master/get_file.R")
+get_file2 <- function(dir, pkg, repo="https://id-bioinfo.github.io/minicran", ...) {
+    get_file(dir, pkg, repo=repo, ...)
 }
-
 ```
 
 
@@ -32,6 +27,6 @@ get_file <- function(dir, pkg, md=TRUE) {
 install.packages("skleid", repo="https://id-bioinfo.github.io/minicran")
 ```
 
-- windows binary: `r get_file(bindir, 'skleid')`
-- package source: `r get_file(srcdir, 'skleid')`
+- windows binary: `r get_file2(bindir, 'skleid')`
+- package source: `r get_file2(srcdir, 'skleid')`
 
