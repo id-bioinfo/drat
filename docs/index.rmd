@@ -1,0 +1,37 @@
+---
+title: R repo for SKLEID lab
+author: Guangchuang Yu
+date: November 28, 2016
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+
+```{r echo=FALSE}
+bindir <- max(list.files('bin/windows/contrib', full.names=T))
+srcdir <- 'src/contrib'
+
+get_file <- function(dir, pkg, md=TRUE) {
+    f <- list.files(dir, full.names=TRUE)
+    pkgfile <- f[grep(pkg, f)]
+    if (!md) {
+        return(basename(pkgfile))
+    }
+    paste0("[", basename(pkgfile), "](https://id-bioinfo.github.io/minicran/", pkgfile, ")")
+}
+
+```
+
+
+
+## skleid
+
+```r
+install.packages("skleid", repo="https://id-bioinfo.github.io/minicran")
+```
+
+- windows binary: `r get_file(bindir, 'skleid')`
+- package source: `r get_file(srcdir, 'skleid')`
+
