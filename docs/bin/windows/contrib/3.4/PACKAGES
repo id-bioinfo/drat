@@ -1,0 +1,177 @@
+Package: BiocGenerics
+Version: 0.22.0
+Depends: methods, utils, graphics, stats, parallel
+Imports: methods, utils, graphics, stats, parallel
+Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, AnnotationDbi,
+        oligoClasses, oligo, affyPLM, flowClust, affy, DESeq2, MSnbase,
+        annotate, RUnit
+License: Artistic-2.0
+
+Package: Biostrings
+Version: 2.44.2
+Depends: R (>= 2.8.0), methods, BiocGenerics (>= 0.15.6), S4Vectors (>=
+        0.13.13), IRanges (>= 2.9.18), XVector (>= 0.11.6)
+Imports: graphics, methods, stats, utils
+LinkingTo: S4Vectors, IRanges, XVector
+Suggests: BSgenome (>= 1.13.14), BSgenome.Celegans.UCSC.ce2 (>=
+        1.3.11), BSgenome.Dmelanogaster.UCSC.dm3 (>= 1.3.11),
+        BSgenome.Hsapiens.UCSC.hg18, drosophila2probe, hgu95av2probe,
+        hgu133aprobe, GenomicFeatures (>= 1.3.14), hgu95av2cdf, affy
+        (>= 1.41.3), affydata (>= 1.11.5), RUnit
+Enhances: Rmpi
+License: Artistic-2.0
+Archs: i386, x64
+
+Package: bitops
+Version: 1.0-6
+License: GPL (>= 2)
+Archs: i386, x64
+
+Package: digest
+Version: 0.6.12
+Depends: R (>= 2.4.1)
+Suggests: knitr, rmarkdown
+License: GPL (>= 2)
+Archs: i386, x64
+
+Package: htmltools
+Version: 0.3.6
+Depends: R (>= 2.14.1)
+Imports: utils, digest, Rcpp
+LinkingTo: Rcpp
+Suggests: markdown, testthat
+Enhances: knitr
+License: GPL (>= 2)
+Archs: i386, x64
+
+Package: httpuv
+Version: 1.3.5
+Depends: R (>= 2.15.1), methods
+Imports: Rcpp (>= 0.11.0), utils
+LinkingTo: Rcpp
+License: GPL-3 | file LICENSE
+Archs: i386, x64
+
+Package: IRanges
+Version: 2.10.3
+Depends: R (>= 3.1.0), methods, utils, stats, BiocGenerics (>= 0.21.1),
+        S4Vectors (>= 0.13.17)
+Imports: stats4
+LinkingTo: S4Vectors
+Suggests: XVector, GenomicRanges, GenomicFeatures, GenomicAlignments,
+        BSgenome.Celegans.UCSC.ce2, RUnit
+License: Artistic-2.0
+Archs: i386, x64
+
+Package: jsonlite
+Version: 1.5
+Depends: methods
+Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp
+License: MIT + file LICENSE
+Archs: i386, x64
+
+Package: magrittr
+Version: 1.5
+Suggests: testthat, knitr
+License: MIT + file LICENSE
+
+Package: markdown
+Version: 0.8
+Depends: R (>= 2.11.1)
+Imports: utils, mime (>= 0.3)
+Suggests: knitr, RCurl
+License: GPL-2
+Archs: i386, x64
+
+Package: mime
+Version: 0.5
+Imports: tools
+License: GPL
+Archs: i386, x64
+
+Package: muscle
+Version: 3.18.0
+Depends: Biostrings
+License: Unlimited
+Archs: i386, x64
+
+Package: R6
+Version: 2.2.2
+Depends: R (>= 3.0)
+Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
+License: MIT + file LICENSE
+
+Package: Rcpp
+Version: 0.12.12
+Depends: R (>= 3.0.0)
+Imports: methods, utils
+Suggests: RUnit, inline, rbenchmark, highlight, pkgKitten (>= 0.1.2)
+License: GPL (>= 2)
+Archs: i386, x64
+
+Package: RCurl
+Version: 1.95-4.8
+Depends: R (>= 3.0.0), methods, bitops
+Suggests: Rcompression, XML
+License: BSD
+Archs: i386, x64
+
+Package: RJSONIO
+Version: 1.3-0
+Imports: methods
+License: BSD_3_clause + file LICENSE
+Archs: i386, x64
+
+Package: S4Vectors
+Version: 0.14.4
+Depends: R (>= 3.3.0), methods, utils, stats, stats4, BiocGenerics (>=
+        0.21.1)
+Imports: methods, utils, stats, stats4, BiocGenerics
+Suggests: IRanges, GenomicRanges, Matrix, ShortRead, graph, data.table,
+        RUnit
+License: Artistic-2.0
+Archs: i386, x64
+
+Package: shiny
+Version: 1.0.5
+Depends: R (>= 3.0.2), methods
+Imports: utils, httpuv (>= 1.3.5), mime (>= 0.3), jsonlite (>= 0.9.16),
+        xtable, digest, htmltools (>= 0.3.5), R6 (>= 2.0), sourcetools,
+        tools
+Suggests: datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),
+        markdown, rmarkdown, ggplot2, magrittr
+License: GPL-3 | file LICENSE
+
+Package: shinyFiles
+Version: 0.6.2
+Imports: tools, shiny (>= 0.11), htmltools, RJSONIO
+License: GPL (>= 2)
+
+Package: sourcetools
+Version: 0.1.6
+Depends: R (>= 3.0.2)
+Suggests: testthat
+License: MIT + file LICENSE
+Archs: i386, x64
+
+Package: xtable
+Version: 1.8-2
+Depends: R (>= 2.10.0)
+Imports: stats, utils
+Suggests: knitr, lsmeans, spdep, splm, sphet, plm, zoo, survival
+License: GPL (>= 2)
+
+Package: XVector
+Version: 0.16.0
+Depends: R (>= 2.8.0), methods, BiocGenerics (>= 0.19.2), S4Vectors (>=
+        0.13.13), IRanges (>= 2.9.18)
+Imports: methods, zlibbioc, BiocGenerics, S4Vectors, IRanges
+LinkingTo: S4Vectors, IRanges
+Suggests: Biostrings, drosophila2probe, RUnit
+License: Artistic-2.0
+Archs: i386, x64
+
+Package: zlibbioc
+Version: 1.22.0
+License: Artistic-2.0 + file LICENSE
+Archs: i386, x64
